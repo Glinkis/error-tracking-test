@@ -3,8 +3,11 @@ import * as HtmlWebpackPlugin from "html-webpack-plugin";
 
 export default {
   devtool: "source-map",
-  mode: "development",
+  mode: "production",
   output: { filename: "[name].[hash].js" },
+  devServer: {
+    host: "0.0.0.0"
+  },
   module: {
     rules: [
       {
